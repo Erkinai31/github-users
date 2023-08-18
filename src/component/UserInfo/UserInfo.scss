@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.users_info {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.profile_img {
+  border-radius: 50%;
+}
+.login {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  color: #656d76;
+}
+.followers {
+  font-size: 14px;
+  line-height: 24px;
+  color: #656d76;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.repo {
+  border: 1px solid #0c05d2;
+  border-radius: 15px;
+  padding: 40px 10px;
+}
+.repositories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 20px;
+}
+.repo-language {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.repo-language-color {
+  background-color: #e35826;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.repo-name {
+  font-size: 18px;
+  text-decoration: none;
+}
+.repo-name:hover {
+  color: red;
+}
+.repo-title {
+  color: #070edf;
+}
+.repo-count {
+  color: #656d76;
+}
+
+@media only screen and (max-width: 1100px) {
+  .users_info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .repositories-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
