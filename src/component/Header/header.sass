@@ -5,6 +5,7 @@ $flex:flex
 @mixin button($bg-color)
   background-color: $bg-color
   border: none
+  padding:0 20px
 
   &:hover
     background-color: darken($bg-color, 10%)
@@ -37,7 +38,6 @@ $flex:flex
     transition:0.8s
     height:30px
 
-
 .header
   display:$flex
   justify-content: space-around
@@ -60,8 +60,6 @@ $flex:flex
       flex-direction: column
 
 @media only screen and (max-width:770px)
-    .search-user:hover > .input-search
-      width:100px
     .github-icon
       width:40px
       height:35px
