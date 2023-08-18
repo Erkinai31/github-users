@@ -58,7 +58,7 @@ const header = forwardRef((ref) => {
           alt="github-icon"
           class="github-icon"
         />
-        <h1 className="title" ref={el}></h1>
+        <h1 class="title" ref={el}></h1>
       </div>
       <div class="search-user">
         <input
