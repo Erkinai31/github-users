@@ -39,29 +39,29 @@ const header = forwardRef((ref) => {
         "finden Sie Informationen zu Benutzern<!>",
       ],
       typeSpeed: 80,
-      loop: true, 
-      backDelay: 1000, 
+      loop: true,
+      backDelay: 1000,
     });
 
     return () => {
       typed.destroy();
-        };
-    }, []);
+    };
+  }, []);
 
-
-    return (
-        <div class="header">
-          <div class="header-title-img">
-            <img
-         src="https://pngimg.com/d/github_PNG90.png"
-         width="50"
-         height="50"
-         alt="github-icon"
-         class="github-icon"/>
-            <h1 className="title" ref={el}></h1>
-          </div>
-            <div class="search-user">
-              <input
+  return (
+    <div class="header">
+      <div class="header-title-img">
+        <img
+          src="https://pngimg.com/d/github_PNG90.png"
+          width="50"
+          height="50"
+          alt="github-icon"
+          class="github-icon"
+        />
+        <h1 className="title" ref={el}></h1>
+      </div>
+      <div class="search-user">
+        <input
           type="text"
           class="input-search"
           placeholder="Geben Sie den GitHub-Benutzernamen ein"
@@ -69,12 +69,11 @@ const header = forwardRef((ref) => {
           onChange={(e) => setUsername(e.target.value)}
         />
         <button onClick={fetchData} class="button-primary">
-        <i class="fas fa-search"></i>
-        </button> 
-        
+          <i class="fas fa-search"></i>
+        </button>
       </div>
-        </div>
-    )
-    })
+    </div>
+  );
+});
 
-export default header
+export default header;

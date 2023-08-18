@@ -70,7 +70,13 @@ body {
   }
 }
 @media only screen and (max-width: 860px) {
+  .repositories{
+    margin:0 20px;
+  }
   .repositories-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns:repeat(1, minmax(200px,1fr));
+  }
+  .repo{
+    padding: 10px;
   }
 }

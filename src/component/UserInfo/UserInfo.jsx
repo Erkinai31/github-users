@@ -28,7 +28,7 @@ const UserInfo = () => {
             </p>
           </div>
           
-          <div>
+          <div className="repositories">
             <h3 className="repo-title">Repositories:</h3>
             <p className="repo-count">Öffentliche Repositories: {userData.public_repos}</p>
             <div class="repositories-grid">
